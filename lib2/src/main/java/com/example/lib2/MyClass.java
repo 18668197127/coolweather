@@ -6,6 +6,8 @@ import com.example.lib2.gson.Result;
 import com.example.lib2.gson.SchoolInfo;
 import com.google.gson.Gson;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,6 +34,10 @@ public class MyClass {
         String js=gson.toJson(result);
         System.out.println(js);
         System.out.println("清华");
+
+        File file=new File("E:/8.txt");
+        FileOutputStream fileOutputStream=new FileOutputStream(file);
+        fileOutputStream.write(js.getBytes());
     }
 
 }
