@@ -7,6 +7,7 @@ import com.example.a19057.coolweather.db.County;
 import com.example.a19057.coolweather.db.Province;
 import com.example.a19057.coolweather.gson.Weather;
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
 import org.json.JSONArray;
 import org.json.JSONException;
